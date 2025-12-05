@@ -12,7 +12,7 @@ REGOLE
 */
 const pets = ["dog", "cat", "hamster", "redfish"];
 
-for (i = 0; i < pets.length; i++) {
+for (let i = 0; i < pets.length; i++) {
   console.log(pets[i]);
 }
 
@@ -62,7 +62,7 @@ const cars = [
   },
 ];
 
-for (i = 0; i < cars.length; i++) {
+for (let i = 0; i < cars.length; i++) {
   cars[i].licensePlate = "AA000AA";
 }
 console.log(cars);
@@ -75,7 +75,7 @@ console.log(cars);
 cars.push({ brand: "Fiat", model: "Stilo", color: "grey", trims: ["st", "base"] });
 console.log(cars);
 
-for (i = 0; i < cars.length; i++) {
+for (let i = 0; i < cars.length; i++) {
   cars[i].trims.pop();
 }
 console.log(cars);
@@ -85,7 +85,7 @@ console.log(cars);
 */
 const justTrims = [];
 
-for (i = 0; i < cars.length; i++) {
+for (let i = 0; i < cars.length; i++) {
   justTrims.push(cars[i].trims[0]);
 }
 console.log(justTrims);
@@ -95,7 +95,7 @@ console.log(justTrims);
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 
-for (i = 0; i < cars.length; i++) {
+for (let i = 0; i < cars.length; i++) {
   if (cars[i].color[0] === "b") {
     console.log("Fizz");
   } else {
@@ -114,3 +114,77 @@ const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
+const posizioni = [];
+
+for (let i = 0; i < charactersArray.length; i++) {
+  let char = charactersArray[i];
+  let numero;
+
+  switch (char) {
+    case "a":
+      numero = 1;
+      break;
+    case "b":
+      numero = 2;
+      break;
+    case "c":
+      numero = 3;
+      break;
+    case "d":
+      numero = 4;
+      break;
+    case "e":
+      numero = 5;
+      break;
+    case "f":
+      numero = 6;
+      break;
+    case "g":
+      numero = 7;
+      break;
+    case "h":
+      numero = 8;
+      break;
+    case "i":
+      numero = 9;
+      break;
+    case "l":
+      numero = 10;
+      break;
+    case "m":
+      numero = 11;
+      break;
+    case "n":
+      numero = 12;
+      break;
+    case "o":
+      numero = 13;
+      break;
+    case "p":
+      numero = 14;
+      break;
+    case "q":
+      numero = 15;
+      break;
+    case "r":
+      numero = 16;
+      break;
+    case "s":
+      numero = 17;
+      break;
+    case "t":
+      numero = 18;
+      break;
+    case "u":
+      numero = 19;
+      break;
+    case "v":
+      numero = 20;
+      break;
+    case "z":
+      numero = 21;
+      break;
+  }
+  posizioni.push(numero);
+}
+console.log(posizioni);
