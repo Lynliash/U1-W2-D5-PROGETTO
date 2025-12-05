@@ -34,8 +34,8 @@ console.log(invert);
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
 
-pets.push(pets[0]); // duplico la prima proprietà e la metto all'inizio
-pets.shift(); // elimino la prima posizione (quindi non l'ho spostato ma cancellato e ricreato)
+pets.push(pets[0]); // reminder: duplico la prima proprietà e la metto all'inizio
+pets.shift(); // reminder: elimino la prima posizione (quindi non l'ho spostato ma cancellato e ricreato)
 console.log(pets);
 
 /* ESERCIZIO 5
